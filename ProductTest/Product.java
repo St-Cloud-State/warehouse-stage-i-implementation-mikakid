@@ -6,9 +6,11 @@ public class Product implements Serializable {
   private String name;
   private int stock;
   private String id;
+  private double price;
 
-  public Product(String name, int stock, String id){
+  public Product(String name, double price, int stock, String id){
     this.name = name;
+    this.price = price;
     this.stock = stock;
     this.id = id;
   }
@@ -16,6 +18,11 @@ public class Product implements Serializable {
   public String getName() {
     return name;
   }
+
+  public double getPrice(){
+    return price;
+  }  
+
   public String getID() {
     return id;
   }
@@ -24,7 +31,7 @@ public class Product implements Serializable {
   }
 
   public String toString() {
-    return "Name: " + name + " stock: " + stock + " id: " + id;
+    return "Name: " + name + "Price: " + price + "Stock: " + stock + " id: " + id;
 }
 
 }

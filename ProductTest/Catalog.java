@@ -15,8 +15,8 @@ public class Catalog implements Serializable {
     }
   }
   
-  public boolean insertProduct(Product product) {
-    product.add(product);
+  public boolean addProduct(Product product) {
+    products.add(product);
     return true;
   }
   public Iterator getProducts() {
@@ -30,6 +30,7 @@ public class Catalog implements Serializable {
       System.out.println(ioe);
     }
   }
+  
   private void readObject(java.io.ObjectInputStream input) {
     try {
       if (catalog != null) {
@@ -49,6 +50,6 @@ public class Catalog implements Serializable {
     }
   }
   public String toString() {
-    return books.toString();
+    return products.toString();
   }
 }
