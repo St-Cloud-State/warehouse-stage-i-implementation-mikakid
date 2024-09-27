@@ -1,4 +1,4 @@
-public class WarehouseSystem {
+public class WishlistTest {
     public static void main(String[] args) {
         // Create a catalog and some products
         Catalog catalog = Catalog.instance();
