@@ -34,10 +34,6 @@ public class Client implements Serializable {
         return wishlist; 
     }
 
-    public void setName(String newName) { 
-        name = newName; 
-    }
-
     public boolean addProductToWishlist(Product product, int quantity) {
         return wishlist.addProduct(product, quantity);
     }
