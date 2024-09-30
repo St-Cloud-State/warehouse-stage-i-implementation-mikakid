@@ -9,13 +9,11 @@ public class Wishlist implements Serializable {
         wishlistItems = new HashMap<>();
     }
 
-    // Add a product to the wishlist or update quantity if it already exists
     public boolean addProduct(Product product, int quantity) {
         wishlistItems.put(product, wishlistItems.getOrDefault(product, 0) + quantity);
         return true;
     }
 
-    // Display the wishlist items with their quantities
     public void displayWishlist() {
         if (wishlistItems.isEmpty()) {
             System.out.println("Wishlist is empty.");
@@ -33,7 +31,6 @@ public class Wishlist implements Serializable {
         }
     }
 
-    // Get all products and their quantities
     public Map<Product, Integer> getWishlistItems() {
         return wishlistItems;
     }
