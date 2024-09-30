@@ -19,11 +19,16 @@ public class Wishlist implements Serializable {
     public void displayWishlist() {
         if (wishlistItems.isEmpty()) {
             System.out.println("Wishlist is empty.");
-        } else {
+        } 
+        else {
             for (Map.Entry<Product, Integer> entry : wishlistItems.entrySet()) {
                 Product product = entry.getKey();
                 int quantity = entry.getValue();
-                System.out.println(product + " | Quantity: " + quantity);
+                double totalPrice = quantity * product.getPrice();
+                System.out.println("Product Name: " + product.getName() + 
+                                   " | ID: " + product.getID() + 
+                                   " | Quantity: " + quantity + 
+                                   " | Total Price: $" + totalPrice);
             }
         }
     }
