@@ -1,0 +1,37 @@
+Script started on 2024-10-01 01:16:09+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="121" LINES="8"]
+[0;32m@mikakid [0m➜ [1;34m/workspaces/warehouse-stage-i-implementation-mikakid/Product_Wishlist_Test [0;36m([1;31mmain[0;36m) [0m$ java Product_Tester 
+Product 1 Name: Laptop
+Product 2 Name: Smartphone
+Product 3 Name: Headphones
+Product 1 ID: 001
+Product 2 ID: 002
+Product 3 ID: 003
+Product 1 Stock: 10
+Product 2 Stock: 50
+Product 3 Stock: 100
+Product 1 Price: $900.0
+Product 2 Price: $500.0
+Product 3 Price: $100.0
+
+Product 1 Details: Name: Laptop stock: 10 price: $900.0 id: 001
+Product 2 Details: Name: Smartphone stock: 50 price: $500.0 id: 002
+Product 3 Details: Name: Headphones stock: 100 price: $100.0 id: 003
+[0;32m@mikakid [0m➜ [1;34m/workspaces/warehouse-stage-i-implementation-mikakid/Product_Wishlist_Test [0;36m([1;31mmain[0;36m) [0m$ java Product_Tester [K[K[K[K[K[K[K[K[K[K[K[K[K[K[KWishlist_Tester 
+Adding products to John's wishlist...
+
+Adding one Laptop on top of John's 2 laptops (Should total 3 laptops)
+
+Displaying John's wishlist:
+Product Name: Headphones | ID: 003 | Quantity: 3 | Total Price: $300.0
+Product Name: Laptop | ID: 001 | Quantity: 3 | Total Price: $2700.0
+Product Name: Smartphone | ID: 002 | Quantity: 1 | Total Price: $500.0
+
+Adding products to Jane's wishlist (Should be 2 Headphones and 1 Tablet)
+
+Displaying Jane's wishlist:
+Product Name: Headphones | ID: 003 | Quantity: 2 | Total Price: $200.0
+Product Name: Tablet | ID: 004 | Quantity: 1 | Total Price: $300.0
+[0;32m@mikakid [0m➜ [1;34m/workspaces/warehouse-stage-i-implementation-mikakid/Product_Wishlist_Test [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2024-10-01 01:16:43+00:00 [COMMAND_EXIT_CODE="0"]
